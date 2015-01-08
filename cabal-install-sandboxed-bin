@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Install a binary package via Cabal without leaving traces.
+
+set -e # Exit if an error occurs
+
+if [ $# -eq 0 ]
+then
+      self=`basename $0`
+      echo "Usage: $self package(s)"
+      exit 1
+fi
+
+tmp=`mktemp -d`
+cd $tmp
+cabal sandbox init
+cabal install --disable-documentation --disable-library-profiling $@
+mv -i --target-directory=$HOME/.cabal/bin .cabal-sandbox/bin/*
+rm -r $tmp
