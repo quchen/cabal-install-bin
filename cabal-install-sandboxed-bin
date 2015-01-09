@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install a binary package via Cabal without leaving traces.
+# Install binaries via Cabal in an isolated environment.
 
 set -e # Exit if an error occurs
 
