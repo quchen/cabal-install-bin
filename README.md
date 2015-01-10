@@ -35,3 +35,10 @@ non-relocatable types of binaries are dynamically linked ones and those that
 need external data files. That said, many (if not all) binaries I've installed
 for myself over the years were relocatable. Check whether the process worked
 after building!
+
+
+
+Programs I've installed successfully
+------------------------------------
+
+- HLint 1.9.15
