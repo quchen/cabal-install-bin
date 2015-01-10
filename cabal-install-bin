@@ -13,9 +13,16 @@ tmp=`mktemp -d`
 cd $tmp
 
 {
-      cabal sandbox init &&
-      cabal install --disable-documentation --disable-library-profiling --disable-shared --disable-executable-dynamic $@ &&
-      mv -i --target-directory=$HOME/.cabal/bin .cabal-sandbox/bin/*
+      cabal sandbox init \
+      &&
+      cabal install --disable-documentation \
+                    --disable-library-profiling \
+                    --disable-shared \
+                    --disable-executable-dynamic \
+                    $@ \
+      &&
+      mv -i --target-directory=$HOME/.cabal/bin \
+            .cabal-sandbox/bin/*
 }
 
 rm -r $tmp
