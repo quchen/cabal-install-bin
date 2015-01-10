@@ -2,15 +2,19 @@
 
 # Install binaries via Cabal in an isolated environment.
 
+self=`basename $0`
 if [ $# -eq 0 ]
 then
-      self=`basename $0`
       echo "Usage: $self package(s)"
       exit 1
 fi
 
-tmp=`mktemp -d`
-cd $tmp
+tmp=`mktemp -d` &&
+echo -n "Created temporary directory" &&
+cd $tmp &&
+echo -n " $tmp"
+
+echo
 
 {
       cabal sandbox init \
@@ -23,6 +27,8 @@ cd $tmp
       &&
       mv -i --target-directory=$HOME/.cabal/bin \
             .cabal-sandbox/bin/*
+} || {
+      echo "$self $@: Installation failed!"
 }
 
-rm -r $tmp
+rm -r $tmp && echo "Removed temporary directory $tmp"
