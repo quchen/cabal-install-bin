@@ -1,5 +1,5 @@
-Installing standalone binaries using Cabal
-==========================================
+Install binary packages in a temporary Cabal sandbox
+====================================================
 
 
 
@@ -27,19 +27,14 @@ Usage
 
 
 
-Pitfalls
---------
+Programs tested with
+--------------------
 
 This process does obviously only work for relocatable binaries. The most common
 non-relocatable types of binaries are dynamically linked ones and those that
 need external data files. That said, many (if not all) binaries I've installed
 for myself over the years were relocatable. Check whether the process worked
 after building!
-
-
-
-Programs tested with
---------------------
 
 ### Successful
 
