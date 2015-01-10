@@ -38,7 +38,15 @@ after building!
 
 
 
-Programs I've installed successfully
-------------------------------------
+Programs installed successfully
+-------------------------------
 
-- HLint 1.9.15
+Program   | `--version` | package name
+----------|-------------|-------------
+Alex      | 3.1.4       | alex-3.1.4
+C2Hsc     | 0.6.4       | c2hsc-0.6.5
+Cabal     | 1.22.0.0    | cabal-install-1.22.0.0
+GHC Core  | n/a         | ghc-core-0.5.6
+Happy     | 1.19.5      | happy-1.19.5
+HLint     | 1.9.15      | hlint-1.9.15
+HsColour  | 1.20        | hscolour-1.20.3
