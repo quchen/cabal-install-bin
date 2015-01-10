@@ -38,8 +38,10 @@ after building!
 
 
 
-Programs installed successfully
--------------------------------
+Programs tested with
+--------------------
+
+### Successful
 
 Program   | `--version` | package name
 ----------|-------------|-------------
@@ -50,3 +52,9 @@ GHC Core  | n/a         | ghc-core-0.5.6
 Happy     | 1.19.5      | happy-1.19.5
 HLint     | 1.9.15      | hlint-1.9.15
 HsColour  | 1.20        | hscolour-1.20.3
+
+### Unsuccessful
+
+Program   | package name | Problem
+----------|--------------|-----------------------------------------------------
+(None so far!) | |
