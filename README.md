@@ -16,8 +16,7 @@ More accurately, the script does the following:
 2. Initialize a Cabal sandbox
 3. Build the desired binaries. Link statically, build with minimal profiling
    overhead (no profiling, no shared libs, no Haddock).
-4. Move all built binaries to `$HOME/.cabal/bin` (prompting on collision
-   via `mv -i`)
+4. Install the binaries to `$HOME/.cabal/bin`
 5. Delete temporary directory
 
 Usage
