@@ -22,7 +22,7 @@ fi
 ###############################################################################
 
 printf "Creating temporary directory"
-tmp="$(mktemp -d 2>/dev/null || mktemp -d -t cabal)"
+tmp="$(mktemp -d -t cabal-XXXX)"
 printf " (%s)\n" "$tmp"
 cd "$tmp"
 
