@@ -50,6 +50,6 @@ HsColour  | 1.20        | hscolour-1.20.3
 
 ### Unsuccessful
 
-Program   | package name | Problem
-----------|--------------|-----------------------------------------------------
-(None so far!) | |
+Program   | package name  | Problem
+----------|---------------|-----------------------------------------------------
+Pandoc    | pandoc-1.13.2 | Requires files in known location for some operations
