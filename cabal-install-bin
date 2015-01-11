@@ -22,17 +22,17 @@ fi
 ###############################################################################
 
 printf "Creating temporary directory"
-tmp="$(mktemp -d)"
+tmp="$(mktemp -d 2>/dev/null || mktemp -d -t cabal)"
 printf " (%s)\n" "$tmp"
 cd "$tmp"
 
 
 
 ###############################################################################
-##  Get bindir  ###############################################################
+##  Get prefix  ###############################################################
 ###############################################################################
 
-bindir="$HOME/.cabal/bin"
+prefix="$HOME/.cabal/"
 
 
 
@@ -47,7 +47,7 @@ bindir="$HOME/.cabal/bin"
                     --disable-library-profiling \
                     --disable-shared \
                     --disable-executable-dynamic \
-                    --bindir="$bindir" \
+                    --prefix="$prefix" \
                     "$@"
 } || {
       printf "%s %s: Installation failed!\n" "$self" "$@" >&2
