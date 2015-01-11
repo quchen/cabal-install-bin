@@ -32,19 +32,17 @@ Programs tested with
 
 This process does obviously only work for relocatable binaries. The most common
 non-relocatable types of binaries are dynamically linked ones and those that
-need external data files. That said, many (if not all) binaries I've installed
-for myself over the years were relocatable. Check whether the process worked
-after building!
+need external data files. That said, many binaries I've installed for myself
+over the years were relocatable. Check whether the process worked after
+building!
 
 ### Successful
 
 Program   | `--version` | package name
 ----------|-------------|-------------
-Alex      | 3.1.4       | alex-3.1.4
 C2Hsc     | 0.6.4       | c2hsc-0.6.5
 Cabal     | 1.22.0.0    | cabal-install-1.22.0.0
 GHC Core  | n/a         | ghc-core-0.5.6
-Happy     | 1.19.5      | happy-1.19.5
 HLint     | 1.9.15      | hlint-1.9.15
 HsColour  | 1.20        | hscolour-1.20.3
 
@@ -52,4 +50,6 @@ HsColour  | 1.20        | hscolour-1.20.3
 
 Program   | package name  | Problem
 ----------|---------------|-----------------------------------------------------
+Alex      | alex-3.1.4    | Hardcodes certain paths in executable
+Happy     | happy-1.19.5  | Hardcodes certain paths in executable
 Pandoc    | pandoc-1.13.2 | Requires files in known location for some operations
