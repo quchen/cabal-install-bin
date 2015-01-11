@@ -8,7 +8,7 @@ Motivation
 
 A common task to use Cabal for is to install binary packages. In order not to
 pollute the global package space, this is often done in a sandbox. This small
-bash script automates this process for packages that support it.
+script automates this process for packages that support it.
 
 More accurately, the script does the following:
 
