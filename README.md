@@ -44,6 +44,7 @@ Cabal     | 1.22.0.0    | cabal-install-1.22.0.0
 GHC Core  | n/a         | ghc-core-0.5.6
 HLint     | 1.9.15      | hlint-1.9.15
 HsColour  | 1.20        | hscolour-1.20.3
+Pandoc    | 1.13.2      | pandoc-1.13.2
 
 ### Unsuccessful
 
@@ -51,4 +52,3 @@ Program   | package name  | Problem
 ----------|---------------|-----------------------------------------------------
 Alex      | alex-3.1.4    | Hardcodes certain paths in executable
 Happy     | happy-1.19.5  | Hardcodes certain paths in executable
-Pandoc    | pandoc-1.13.2 | Requires files in known location for some operations
