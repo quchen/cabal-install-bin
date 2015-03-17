@@ -32,7 +32,7 @@ cd "$tmp"
 ##  Get prefix  ###############################################################
 ###############################################################################
 
-prefix="$HOME/.cabal/"
+prefix="$HOME/.cabal"
 
 
 
@@ -47,8 +47,11 @@ prefix="$HOME/.cabal/"
                     --disable-library-profiling \
                     --disable-shared \
                     --disable-executable-dynamic \
-                    --prefix="$prefix" \
+                    --bindir="$prefix/bin" \
+                    --datadir="$prefix/share" \
                     "$@"
+# do not actually specify --prefix to prevent installation of libraries to
+# "$HOME/.cabal/lib".
 } || {
       printf "%s %s: Installation failed!\n" "$self" "$@" >&2
 }
