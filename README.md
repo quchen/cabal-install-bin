@@ -46,9 +46,13 @@ HLint     | 1.9.15      | hlint-1.9.15
 HsColour  | 1.20        | hscolour-1.20.3
 Pandoc    | 1.13.2      | pandoc-1.13.2
 
-### Unsuccessful
+### Status unknown
+
+These programs were unsuccessfully built in the past, but due to multiple
+patches in the meantime they might work as intended now. I'll gladly take
+user reports on success or failure.
 
 Program   | package name  | Problem
 ----------|---------------|-----------------------------------------------------
-Alex      | alex-3.1.4    | Hardcodes certain paths in executable
-Happy     | happy-1.19.5  | Hardcodes certain paths in executable
+Alex      | alex-3.1.4    | (may work, needs testing)
+Happy     | happy-1.19.5  | (may work, needs testing)
