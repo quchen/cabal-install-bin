@@ -50,8 +50,6 @@ prefix="$HOME/.cabal"
                     --bindir="$prefix/bin" \
                     --datadir="$prefix/share" \
                     "$@"
-# do not actually specify --prefix to prevent installation of libraries to
-# "$HOME/.cabal/lib".
 } || {
       printf "%s %s: Installation failed!\n" "$self" "$@" >&2
 }
