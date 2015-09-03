@@ -55,4 +55,4 @@ user reports on success or failure.
 Program   | package name  | Problem
 ----------|---------------|-----------------------------------------------------
 Alex      | alex-3.1.4    | (may work, needs testing)
-Happy     | happy-1.19.5  | (may work, needs testing)
+Happy     | happy-1.19.5  | (Reported to work on OSX with GHC 7.8.3)
